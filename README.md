@@ -25,7 +25,8 @@ View-Consistent Heterogeneous Networks
 - For Citeseer without verification:
     - 0.5%: `python train.py --dataset citeseer --percent 0.005 --fastmode True --t1 200 --t2 300 --k 15`
     - 1.0%: `python train.py --dataset citeseer --percent 0.01 --fastmode True --t1 180 --t2 280 --k 13`
-## Eight heads (You nned to modified the head in model and parameters need to following the paper)
+## Eight heads 
+- You nned to modified the head in model for PubMed and its parameters need to following the paper
 - For PubMed with verification:
     - 0.03%: `python train.py --dataset pubmed --percent 0.0003 --t1 1000 --t2 2000 --k 15`
     - 0.05%: `python train.py --dataset pubmed --percent 0.0005 --t1 1000 --t2 2000 --k 13`
