@@ -1,9 +1,10 @@
-# Graph view-consistent learning networks
+View-Consistent Heterogeneous Networks
 
-## Experiments
+# Experiments
 - For different data sets and different label rates, we set different numbers of pseudo-labels and filtering strengths.
 - The parameter setting and the command to run the code are as follows:
 
+## Three heads
 - For Cora with verification:
   - 0.5%: `python train.py --dataset cora --percent 0.005 --t1 200 --t2 300 --k 15`
   - 1.0%: `python train.py --dataset cora --percent 0.01 --t1 180 --t2 280 --k 13`
@@ -24,7 +25,7 @@
 - For Citeseer without verification:
     - 0.5%: `python train.py --dataset citeseer --percent 0.005 --fastmode True --t1 200 --t2 300 --k 15`
     - 1.0%: `python train.py --dataset citeseer --percent 0.01 --fastmode True --t1 180 --t2 280 --k 13`
-
+## Eight heads
 - For PubMed with verification:
     - 0.03%: `python train.py --dataset pubmed --percent 0.0003 --t1 1000 --t2 2000 --k 15`
     - 0.05%: `python train.py --dataset pubmed --percent 0.0005 --t1 1000 --t2 2000 --k 13`
@@ -35,19 +36,22 @@
     - 0.05%: `python train.py --dataset pubmed --percent 0.0005 --fastmode True --t1 800 --t2 1800 --k 13`
     - 0.10%: `python train.py --dataset pubmed --percent 0.001 --fastmode True --t1 800 --t2 1800 --k 11`
 
-## Citation
+# Citation
 We appreciate it if you cite the following paper:
 ```
-@inproceedings{Liao2021,
-  author =  {Liao, Zhuolin and Zhan, Kun},
-  title =   {View-consistent learing on Graph with few Labeled Nodes},
-  booktitle = {arXiv},
-  year =    {2021},
-}
+@Article{LiaoTcy2022,
+  author =  {Zhuolin Liao and Xiaolin Zhang and Wei Su and Kun Zhan},
+  title =   {View-Consistent Heterogeneous Network on Graphs with Few Labeled Nodes},
+  journal = {IEEE Transactions on Cybernetics},
+  year =    {2022},
+  volume =  {},
+  number =  {},
+  pages =   {}
+ }
 
 ```
 
-## Contact
+# Contact
 https://kunzhan.github.io/
 
 If you have any questions, feel free to contact me. (Email: `ice.echo#gmail.com`)
