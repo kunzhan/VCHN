@@ -4,7 +4,7 @@ Performing transductive learning on graphs with very few labeled data, i.e., two
 # Experiments
 - For different data sets and different label rates, we set different numbers of pseudo-labels and filtering strengths.
 - The parameter setting and the command to run the code are as follows:
-- Results Repoted in folder `./log` are not the final since some parameters are changed after this version, e.g. the head number.
+- Results in folder `./Result` are not the final since some parameters are changed after this version, e.g. the head number.
 
 ## Three heads
 - For Cora with verification:
