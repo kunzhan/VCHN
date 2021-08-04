@@ -4,6 +4,7 @@ Performing transductive learning on graphs with very few labeled data, i.e., two
 # Experiments
 - For different data sets and different label rates, we set different numbers of pseudo-labels and filtering strengths.
 - The parameter setting and the command to run the code are as follows:
+- Results Repoted in folder `./log` are not the final results since some parameters are changed after this verstion, e.g. the head number.
 
 ## Three heads
 - For Cora with verification:
@@ -27,7 +28,7 @@ Performing transductive learning on graphs with very few labeled data, i.e., two
     - 0.5%: `python train.py --dataset citeseer --percent 0.005 --fastmode True --t1 200 --t2 300 --k 15`
     - 1.0%: `python train.py --dataset citeseer --percent 0.01 --fastmode True --t1 180 --t2 280 --k 13`
 ## Eight heads 
-- You need to modify the head in model.py for PubMed and its parameters need to be set according to the paper.
+- You modify the head in `model.py` for PubMed and its parameters are set according to the paper.
 - For PubMed with verification:
     - 0.03%: `python train.py --dataset pubmed --percent 0.0003 --t1 1000 --t2 2000 --k 15`
     - 0.05%: `python train.py --dataset pubmed --percent 0.0005 --t1 1000 --t2 2000 --k 13`
