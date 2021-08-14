@@ -3,8 +3,8 @@ Performing transductive learning on graphs with very few labeled data, i.e., two
 
 # Experiments
 - For different data sets and different label rates, we set different numbers of pseudo-labels and filtering strengths.
+- Results in `./Result` are not the final since some parameters are changed after this version, e.g., No. head.
 - The parameter setting and the command to run the code are as follows:
-- Results in folder `./Result` are not the final since some parameters are changed after this version, e.g. the head number.
 
 ## Three heads
 - For Cora with verification:
@@ -27,7 +27,7 @@ Performing transductive learning on graphs with very few labeled data, i.e., two
 - For Citeseer without verification:
     - 0.5%: `python train.py --dataset citeseer --percent 0.005 --fastmode True --t1 200 --t2 300 --k 15`
     - 1.0%: `python train.py --dataset citeseer --percent 0.01 --fastmode True --t1 180 --t2 280 --k 13`
-## Eight heads 
+## Parts of PubMed Experiments using Eight heads 
 - You need to modify the head in `model.py` for PubMed.
 - For PubMed with verification:
     - 0.03%: `python train.py --dataset pubmed --percent 0.0003 --t1 1000 --t2 2000 --k 15`
